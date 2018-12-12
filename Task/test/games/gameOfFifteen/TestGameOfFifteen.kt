@@ -3,8 +3,8 @@ package games.gameOfFifteen
 import board.Direction
 import board.Direction.*
 import games.game.Game
-import org.junit.Assert
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
 
 class TestGameOfFifteen {
     private fun Game.asString() =
@@ -25,12 +25,11 @@ class TestGameOfFifteen {
         for ((index, move) in moves.withIndex()) {
             if (move.direction == null) continue
             // checking the state after each move
-            Assert.assertTrue("The move for game of fifteen should be always possible", game.canMove())
+            assertTrue(game.canMove(), "The move for game of fifteen should be always possible")
             game.processMove(move.direction)
             val prev = moves[index - 1].board
-            Assert.assertEquals("Wrong result after pressing ${move.direction} " +
-                    "for\n$prev\n",
-                    move.board, game.asString())
+            assertEquals(move.board, game.asString(), "Wrong result after pressing ${move.direction} " +
+                    "for\n$prev\n")
         }
     }
 
@@ -44,8 +43,7 @@ class TestGameOfFifteen {
     @Test
     fun testInitialState() {
         val initializer = RandomGameInitializer()
-        Assert.assertNotEquals("The initial permutation must not be trivial",
-            (1..15).toList(), initializer.initialPermutation)
+        assertNotEquals((1..15).toList(), initializer.initialPermutation, "The initial permutation must not be trivial")
     }
 
     @Test
@@ -90,7 +88,6 @@ class TestGameOfFifteen {
         val game = newGameOfFifteen(TestGameInitializer(
                 (1..15).toList()))
         game.initialize()
-        Assert.assertTrue("The player should win when the numbers are in order",
-                game.hasWon())
+        assertTrue(game.hasWon(), "The player should win when the numbers are in order")
     }
 }

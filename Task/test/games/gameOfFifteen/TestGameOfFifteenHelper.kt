@@ -1,12 +1,11 @@
 package games.gameOfFifteen
 
-import org.junit.Assert
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class TestGameOfFifteenHelper {
     private fun testPermutation(permutation: List<Int>, isEven: Boolean) {
-        Assert.assertEquals("This permutation should be ${if (isEven) "even" else "odd"}: $permutation", isEven,
-                isEven(permutation))
+        assertEquals(isEven, isEven(permutation), "This permutation should be ${if (isEven) "even" else "odd"}: $permutation")
     }
 
     @Test

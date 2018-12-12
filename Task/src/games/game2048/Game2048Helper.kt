@@ -14,5 +14,10 @@ package games.game2048
  *   a, null, a, a -> aa, a
 */
 fun <T : Any> List<T?>.moveAndMergeEqual(double: (T) -> T): List<T> =
-        TODO()
+        this.filterNotNull().fold(emptyList()) { acc, t ->
+            when {
+                acc.lastOrNull() != t -> acc.plus(t)
+                else -> acc.dropLast(1).plus(double(t))
+            }
+        }
 

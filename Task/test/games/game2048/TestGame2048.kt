@@ -5,8 +5,8 @@ import board.Direction
 import board.Direction.*
 import board.GameBoard
 import games.game.Game
-import org.junit.Assert
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class TestGame2048 {
     private fun Game.asString() =
@@ -31,10 +31,9 @@ class TestGame2048 {
             // checking the state after initialization
             val first = moves[0]
             val second = moves[1]
-            Assert.assertEquals("Wrong result after board initialization " +
+            assertEquals(second.board, game.asString(), "Wrong result after board initialization " +
                     "by '${first.value}' at ${first.cell} and " +
-                    "'${second.value}' at ${second.cell}",
-                    second.board, game.asString())
+                    "'${second.value}' at ${second.cell}")
         }
 
         for ((index, move) in moves.withIndex()) {
@@ -42,10 +41,9 @@ class TestGame2048 {
             // checking the state after each move
             game.processMove(move.direction)
             val prev = moves[index - 1].board
-            Assert.assertEquals("Wrong result after moving ${move.direction} " +
+            assertEquals(move.board, game.asString(), "Wrong result after moving ${move.direction} " +
                     "and then adding '${move.value}' to ${move.cell} " +
-                    "for\n$prev\n",
-                    move.board, game.asString())
+                    "for\n$prev\n")
         }
     }
 

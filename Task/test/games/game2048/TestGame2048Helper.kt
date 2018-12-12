@@ -1,9 +1,20 @@
 package games.game2048
 
-import org.junit.Assert
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class TestGame2048Helper {
+
+    @Test
+    fun `remove nulls from list`() {
+        testMerge(listOf(null, "a"), listOf("a"))
+    }
+
+    @Test
+    fun `two matching elements in the list are merged and the duplicate removed`() {
+        testMerge(listOf("b", "b"), listOf("bb"))
+    }
+
     @Test
     fun testSample1() = testMerge(listOf("a", "a", "b"), listOf("aa", "b"))
 
@@ -22,7 +33,6 @@ class TestGame2048Helper {
 
     private fun testMerge(input: List<String?>, expected: List<String?>) {
         val result = input.moveAndMergeEqual { it.repeat(2) }
-        Assert.assertEquals("Wrong result for $input.moveAndMergeEqual()",
-                expected, result)
+        assertEquals(expected, result, "Wrong result for $input.moveAndMergeEqual()")
     }
 }
