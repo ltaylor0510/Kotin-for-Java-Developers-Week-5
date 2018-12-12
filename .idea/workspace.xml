@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4343634c-2028-4af7-8450-ccd670d01025" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Task/src/board/BoardImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/src/board/BoardImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task/src/games/game2048/Game2048Helper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/src/games/game2048/Game2048Helper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task/test/TestGame2048.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/test/games/game2048/TestGame2048.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task/test/TestGame2048Helper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/test/games/game2048/TestGame2048Helper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task/test/TestGameBoard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/test/games/board/TestGameBoard.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task/test/TestGameOfFifteen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/test/games/gameOfFifteen/TestGameOfFifteen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task/test/TestGameOfFifteenHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/test/games/gameOfFifteen/TestGameOfFifteenHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task/test/TestSquareBoard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/test/games/board/TestSquareBoard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task/src/games/game2048/Game2048Initializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/src/games/game2048/Game2048Initializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KotlinGames/games/game2048/RandomGame2048Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KotlinGames/games/game2048/RandomGame2048Initializer.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +16,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.4538584">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Task/test/games/game2048/TestGame2048Helper.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="576">
@@ -34,10 +29,25 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
+            <entry file="file://$PROJECT_DIR$/Task/test/games/game2048/TestGame2048.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="439" column="31" selection-start-line="439" selection-start-column="31" selection-end-line="439" selection-end-column="31" />
+                <state relative-caret-position="486">
+                  <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#24#222#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Task/test/games/game2048/TestGame2048Initializer.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="720">
+                  <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+                  <folding>
+                    <element signature="e#24#217#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -47,6 +57,18 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Task/src/games/game2048/Game2048Initializer.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#24#83#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Task/src/games/game2048/Game2048Helper.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="378">
@@ -55,9 +77,33 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Task/src/games/game2048/Game2048.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="9" column="90" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="90" />
+                  <folding>
+                    <element signature="e#24#139#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>https://en.wikipedia.org/wiki/2048_(video_game)</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,6 +121,8 @@
         <option value="$PROJECT_DIR$/Task/src/board/BoardImpl.kt" />
         <option value="$PROJECT_DIR$/Task/src/games/game2048/Game2048Helper.kt" />
         <option value="$PROJECT_DIR$/Task/test/games/game2048/TestGame2048Helper.kt" />
+        <option value="$PROJECT_DIR$/Task/src/games/game2048/Game2048Initializer.kt" />
+        <option value="$PROJECT_DIR$/Task/test/games/game2048/TestGame2048Initializer.kt" />
       </list>
     </option>
   </component>
@@ -177,6 +225,14 @@
               <item name="Task" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KotlinGames" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinGames" type="462c0819:PsiDirectoryNode" />
+              <item name="Task" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
               <item name="game2048" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -190,7 +246,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544624270164" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544640151309" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../KotlinBoard" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -216,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestGame2048Initializer">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -249,8 +305,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGame2048Initializer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="games.game2048.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="games.game2048" />
+      <option name="MAIN_CLASS_NAME" value="games.game2048.TestGame2048Initializer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestGame2048Initializer" />
         <item itemvalue="JUnit.TestGame2048Helper" />
       </list>
     </recent_temporary>
@@ -269,21 +340,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGame2048Helper - 2018.12.12 at 12h 23m 01s.xml">
-      <configuration name="TestGame2048Helper" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame2048Helper - 2018.12.12 at 12h 23m 33s.xml">
-      <configuration name="TestGame2048Helper" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame2048Helper - 2018.12.12 at 12h 26m 19s.xml">
-      <configuration name="TestGame2048Helper" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame2048Helper - 2018.12.12 at 12h 27m 24s.xml">
-      <configuration name="TestGame2048Helper" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame2048Helper - 2018.12.12 at 12h 42m 12s.xml">
-      <configuration name="TestGame2048Helper" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestGame2048Helper - 2018.12.12 at 12h 43m 04s.xml">
       <configuration name="TestGame2048Helper" configurationId="JUnit" />
     </history-entry>
@@ -299,6 +355,21 @@
     <history-entry file="TestGame2048Helper - 2018.12.12 at 13h 06m 02s.xml">
       <configuration name="TestGame2048Helper" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestGame2048Initializer - 2018.12.12 at 15h 45m 12s.xml">
+      <configuration name="TestGame2048Initializer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame2048Initializer - 2018.12.12 at 18h 27m 09s.xml">
+      <configuration name="TestGame2048Initializer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame2048Initializer - 2018.12.12 at 18h 31m 56s.xml">
+      <configuration name="TestGame2048Initializer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame2048Initializer - 2018.12.12 at 18h 37m 26s.xml">
+      <configuration name="TestGame2048Initializer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame2048Initializer - 2018.12.12 at 18h 39m 03s.xml">
+      <configuration name="TestGame2048Initializer" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="2560" height="1444" extended-state="6" />
@@ -309,15 +380,15 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14558473" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14558473" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32953683" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32953683" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32953683" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32953683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -350,49 +421,10 @@
     <entry file="file://$PROJECT_DIR$/Task/src/games/gameOfFifteen/GameOfFifteen.kt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task/src/games/game2048/Game2048Initializer.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task/src/games/game2048/Game2048.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#24#139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task/src/games/game/Game.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task/src/board/Board.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task/test/games/game2048/TestGame2048.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task/test/games/board/TestGameBoard.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="e#21#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task/test/games/board/TestSquareBoard.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -420,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task/src/board/BoardImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="61" lean-forward="true" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -441,12 +466,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Task/src/games/game2048/Game2048.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="90" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="90" />
+          <folding>
+            <element signature="e#24#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task/test/games/game2048/TestGame2048Helper.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#24#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/test/games/game2048/TestGame2048.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="e#24#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/test/games/board/TestSquareBoard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/src/board/Board.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/src/board/BoardImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/test/games/board/TestGameBoard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#21#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/src/games/game2048/Game2048Initializer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/test/games/game2048/TestGame2048Initializer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#24#217#0" expanded="true" />
           </folding>
         </state>
       </provider>
