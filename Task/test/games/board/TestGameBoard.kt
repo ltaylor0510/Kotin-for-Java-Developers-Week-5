@@ -1,5 +1,6 @@
 package games.board
 
+import board.Cell
 import board.GameBoard
 import board.createGameBoard
 import org.junit.jupiter.api.Assertions.*
@@ -8,6 +9,7 @@ import org.junit.jupiter.api.Test
 class TestGameBoard {
     operator fun <T> GameBoard<T>.get(i: Int, j: Int) = get(getCell(i, j))
     operator fun <T> GameBoard<T>.set(i: Int, j: Int, value: T) = set(getCell(i, j), value)
+    private fun Cell?.asString() = if (this != null) "($i, $j)" else ""
 
     @Test
     fun testGetAndSetElement() {
@@ -46,5 +48,14 @@ class TestGameBoard {
         gameBoard[1, 2] = 'b'
         assertTrue(gameBoard.any { it in 'a'..'b' })
         assertTrue(gameBoard.any { it == null })
+    }
+
+    @Test
+    fun `test that find locates a null cell`() {
+        val gameBoard = createGameBoard<Int?>(2)
+        gameBoard[1, 1] = 1
+        gameBoard[1, 2] = 2
+        gameBoard[2, 1] = 3
+        assertEquals("(2, 2)", gameBoard.find { it == null }.asString())
     }
 }

@@ -42,7 +42,10 @@ class Game2048(private val initializer: Game2048Initializer<Int>) : Game {
  * Add a new value produced by 'initializer' to a specified cell in a board.
  */
 fun GameBoard<Int?>.addNewValue(initializer: Game2048Initializer<Int>) {
-    TODO()
+    val initializerResult = initializer.nextValue(this)
+    if (initializerResult != null) {
+        this[initializerResult.first] = initializerResult.second
+    }
 }
 
 /*
@@ -52,7 +55,16 @@ fun GameBoard<Int?>.addNewValue(initializer: Game2048Initializer<Int>) {
  * Return 'true' if the values were moved and 'false' otherwise.
  */
 fun GameBoard<Int?>.moveValuesInRowOrColumn(rowOrColumn: List<Cell>): Boolean {
-    TODO()
+    val existingCellValues = rowOrColumn.map { this[it] }
+    val cellValuesAfterMove = existingCellValues.moveAndMergeEqual { it + it }
+    rowOrColumn.forEachIndexed { index, cell ->
+        if (index < cellValuesAfterMove.size) {
+            this[cell] = cellValuesAfterMove[index]
+        } else {
+            this[cell] = null
+        }
+    }
+    return cellValuesAfterMove.size < existingCellValues.size
 }
 
 /*
@@ -61,5 +73,20 @@ fun GameBoard<Int?>.moveValuesInRowOrColumn(rowOrColumn: List<Cell>): Boolean {
  * Return 'true' if the values were moved and 'false' otherwise.
  */
 fun GameBoard<Int?>.moveValues(direction: Direction): Boolean {
-    TODO()
+    return when (direction) {
+        Direction.LEFT -> this.allRows().map { row -> moveValuesInRowOrColumn(row) }.any { it }
+        Direction.RIGHT -> this.allRows().map { row -> moveValuesInRowOrColumn(row.reversed()) }.any { it }
+        Direction.UP -> this.allColumns().map { column -> moveValuesInRowOrColumn(column) }.any { it }
+        Direction.DOWN -> this.allColumns().map { column -> moveValuesInRowOrColumn(column.reversed()) }.any { it }
+    }
 }
+
+private fun GameBoard<Int?>.allColumns(): List<List<Cell>> {
+    return (1..this.width).map { it -> this.getColumn(1..width, it) }
+}
+
+private fun GameBoard<Int?>.allRows(): List<List<Cell>> {
+    return (1..this.width).map { it -> this.getRow(it, 1..width) }
+}
+
+

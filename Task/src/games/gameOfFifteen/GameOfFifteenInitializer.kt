@@ -13,7 +13,11 @@ interface GameOfFifteenInitializer {
 
 class RandomGameInitializer : GameOfFifteenInitializer {
     override val initialPermutation by lazy {
-        TODO()
+        fun createPermutation(): List<Int> {
+            val permutation = (1..15).shuffled()
+            return if (isEven(permutation)) permutation else createPermutation()
+        }
+        createPermutation()
     }
 }
 
