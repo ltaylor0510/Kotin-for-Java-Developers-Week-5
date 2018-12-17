@@ -17,7 +17,7 @@ fun newGameOfFifteen(initializer: GameOfFifteenInitializer = RandomGameInitializ
 class GameOfFifteen(private val initializer: GameOfFifteenInitializer) : Game {
     val board = createGameBoard<Int?>(4)
 
-    val winningOrder = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, null)
+    val winningOrder = (1..15).toList().plus(null as Int?)
 
     private fun <T> sortedListOfCells(board: GameBoard<T>): List<Cell> {
         return board.getAllCells().sortedWith(compareBy<Cell> { it.i }.thenBy { it.j })
@@ -40,24 +40,16 @@ class GameOfFifteen(private val initializer: GameOfFifteenInitializer) : Game {
 
     override fun processMove(direction: Direction) {
         val emptyCell = board.find { it == null }
-        when (direction) {
-            Direction.UP -> with(board) {
-                val neighbourCell = emptyCell?.getNeighbour(Direction.DOWN)
-                makeMove(neighbourCell, emptyCell)
-            }
-            Direction.DOWN -> with(board) {
-                val neighbourCell = emptyCell?.getNeighbour(Direction.UP)
-                makeMove(neighbourCell, emptyCell)
-            }
-            Direction.RIGHT -> with(board) {
-                val neighbourCell = emptyCell?.getNeighbour(Direction.LEFT)
-                makeMove(neighbourCell, emptyCell)
-            }
-            Direction.LEFT -> with(board) {
-                val neighbourCell = emptyCell?.getNeighbour(Direction.RIGHT)
-                makeMove(neighbourCell, emptyCell)
-            }
+        val translatedDirection = when (direction) {
+            Direction.UP -> Direction.DOWN
+            Direction.DOWN -> Direction.UP
+            Direction.RIGHT -> Direction.LEFT
+            Direction.LEFT -> Direction.RIGHT
         }
+        val neighbourCell = with(board) {
+            emptyCell?.getNeighbour(translatedDirection)
+        }
+        makeMove(neighbourCell, emptyCell)
     }
 
     private fun makeMove(neighbourCell: Cell?, emptyCell: Cell?) {
